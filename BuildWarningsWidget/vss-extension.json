@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "buildwarnings-widget",
-  "version": "0.0.47",
+  "version": "1.0.1",
   "name": "Build Warnings Widgets",
   "scopes": [
     "vso.build"
@@ -26,10 +26,16 @@
     "color": "rgb(180, 53, 0)",
     "theme": "dark"
   },
+  "links": {
+    "support": { "uri": "https://github.com/SWarnberg/BuildWarningsWidget/issues" }
+  },
   "categories": [ "Plan and track" ],
   "tags": [ "code quality" ],
   "content": {
-    "details": { "path": "readme.md" }
+    "details": { "path": "readme.md" },
+    "license": {
+      "path": "license.md"
+    }
   },
   "contributions": [
     {
