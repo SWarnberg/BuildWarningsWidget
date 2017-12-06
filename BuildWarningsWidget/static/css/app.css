@@ -1,0 +1,30 @@
+﻿/*body {
+    font-family: 'Segoe UI', sans-serif;
+}*/
+
+/*.countdown {
+  padding: 14px;
+  background-color: #F1F2F2;
+}*/
+
+/*span {
+    font-style: italic;
+}*/
+.container {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.config-label {
+  margin-right: 20px;
+}
+
+.background-picker {
+  margin-top: 10px;
+}
+
+.build-selector {
+  margin: 20px 0 10px 40px;
+  width: 280px;
+}

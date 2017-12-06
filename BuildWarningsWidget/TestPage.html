@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <style>
+    .widget {
+      font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Ubuntu, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      padding: 10px 14px;
+      height: inherit;
+      overflow: hidden;
+      cursor: default;
+    }
+
+      .widget h1, .widget h2, .widget h3, .widget h4, .widget h5, .widget h6 {
+        font-weight: normal;
+        margin-bottom: 5px;
+      }
+
+      .widget .title {
+        font-size: 16px;
+        margin: 0 0 10px 0;
+      }
+
+      .widget h1 {
+        font-size: 18px;
+      }
+
+      .widget h2 {
+        font-size: 16px;
+      }
+
+      .widget .big-count {
+        font-size: 72px;
+        line-height: 72px;
+        margin: 5px 0 10px 0;
+        font-weight: 300;
+      }
+  </style>
+</head>
+<body>
+
+  <div id="build-widget" class="widget">
+    <h2 id="widget-title" class="title"></h2>
+    <div id="widget-count" class="big-count"></div>
+    <div id="widget-details"></div>
+  </div>
+
+  <script type="text/javascript">
+
+    window.onload = function () {
+      var $title = $('h2.title');
+      $title.text('Build Warnings');
+      //var $warnings = 23333;
+      var $warnings = getBuildWarnings();
+      var $count = $("#build-widget #widget-count");
+      //$count.text("233");
+      $count.text($warnings.toString());
+      var $buildname = $("#build-widget #widget-details");
+      $buildname.text("Kernel Main");
+
+      // Resize the font
+      if ($warnings > 9999) {
+        $count.css("font-size", "44px");
+      }
+      else if ($warnings > 999) {
+        $count.css("font-size", "56px");
+      }
+
+    }
+
+    function getBuildWarnings() {
+      return 2333;
+    }
+
+  </script>
+</body>
+</html>

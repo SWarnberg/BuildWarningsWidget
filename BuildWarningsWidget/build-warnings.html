@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+</head>
+<body id="widget-body">
+
+  <div id="build-widget" class="widget clickable">
+    <a id="build-link" href="" target="_blank">
+      <h2 id="widget-title" class="title truncated-text-ellipsis">Build Warnings</h2>
+      <div id="widget-count" class="big-count"></div>
+      <div id="widget-details" class="footer truncated-text-ellipsis"></div>
+    </a>
+  </div>
+  <script src="scripts/lib/VSS.SDK.js"></script>
+
+  <script type="text/javascript">
+
+    VSS.init({
+      explicitNotifyLoaded: true,
+      setupModuleLoader: true,
+      usePlatformScripts: true,
+      usePlatformStyles: true
+    });
+
+    VSS.ready(function () {
+      require(["scripts/buildwarnings"], function (buildwarnings) { });
+    });
+
+  </script>
+
+</body>
+</html>

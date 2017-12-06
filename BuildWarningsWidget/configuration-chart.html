@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+  <div class="widget-configuration">
+    <div id="build-picker" class="dropdown">
+      <label>Build</label>
+      <div class="wrapper">
+        <select id="build-dropdown">
+          <option value="" selected disabled hidden>Please select a build</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="scripts/lib/VSS.SDK.js"></script>
+
+  <script type="text/javascript">
+
+    VSS.init({
+      explicitNotifyLoaded: true,
+      setupModuleLoader: true,
+      usePlatformScripts: true,
+      usePlatformStyles: true
+    });
+
+    VSS.ready(function () {
+      require(["scripts/configuration-chart"], function (configuration) { });
+    });
+
+  </script>
+
+</body>
+</html>

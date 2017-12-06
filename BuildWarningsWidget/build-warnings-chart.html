@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+</head>
+<body id="widget-body">
+
+  <div class="widget">
+    <h2 id="widget-title" class="title">Build Warnings Trend</h2>
+    <div id="Chart-Container"></div>
+  </div>
+  <script src="scripts/lib/VSS.SDK.js"></script>
+
+  <script type="text/javascript">
+
+    VSS.init({
+      explicitNotifyLoaded: true,
+      setupModuleLoader: true,
+      usePlatformScripts: true,
+      usePlatformStyles: true
+    });
+
+    VSS.ready(function () {
+      require(["scripts/buildwarnings-chart"], function (buildwarnings) { });
+    });
+
+  </script>
+
+</body>
+</html>

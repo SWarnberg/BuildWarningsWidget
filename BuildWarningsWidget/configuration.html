@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <!--<meta charset="utf-8" />-->
+  <!--<script src="lib/VSS.SDK.min.js"></script>-->
+  <!--<link href="static/css/app.css" rel="stylesheet" />-->
+  <link href="scripts/lib/spectrum.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="widget-configuration">
+    <div id="build-picker" class="dropdown">
+      <label>Build</label>
+      <div class="wrapper">
+        <select id="build-dropdown">
+          <option value="" selected disabled hidden>Please select a build</option>
+        </select>
+      </div>
+    </div>
+    <div id="background-colorpicker" class="background-picker">
+      <fieldset>
+        <label class="config-label">Background color</label>
+        <input id="background-color-input" class="field">
+      </fieldset>
+    </div>
+    <div id="foreground-colorpicker" style="margin-top: 1px">
+      <fieldset>
+        <label class="config-label">Foreground color</label>
+        <input id="foreground-color-input" class="field">
+      </fieldset>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="scripts/lib/VSS.SDK.js"></script>
+  <script src="scripts/lib/moment.js"></script>
+  <script src="scripts/lib/spectrum.js"></script>
+
+  <script type="text/javascript">
+
+    VSS.init({
+      explicitNotifyLoaded: true,
+      setupModuleLoader: true,
+      usePlatformScripts: true,
+      usePlatformStyles: true
+    });
+
+    VSS.ready(function () {
+      require(["scripts/configuration"], function (configuration) { });
+    });
+
+  </script>
+
+</body>
+</html>
