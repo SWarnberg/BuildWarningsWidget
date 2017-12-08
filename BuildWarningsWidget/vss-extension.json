@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "buildwarnings-widget",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "name": "Build Warnings Widgets",
   "scopes": [
     "vso.build"
@@ -10,7 +10,7 @@
   "publisher": "SWarnberg",
   "public": true,
   "icons": {
-    "default": "static/images/warnings_logo3.png"
+    "default": "static/images/warnings_logo_128.png"
   },
   "demands": [ "contribution/ms.vss-dashboards-web.widget-sdk-version-2", "contribution/ms.vss-web.charts-service" ],
   "targets": [
@@ -48,7 +48,7 @@
       "properties": {
         "name": "Build Warnings",
         "description": "Displays the number of build warnings of a selected build definition.",
-        "catalogiconUrl": "static/images/warnings_logo3.png",
+        "catalogiconUrl": "static/images/warnings_logo_128.png",
         "previewImageUrl": "static/images/preview2.png",
         "uri": "build-warnings.html",
         "supportedSizes": [
@@ -80,7 +80,7 @@
       "properties": {
         "name": "Build Warnings Trend",
         "description": "Shows the history of build warnings for a selected build definition.",
-        "catalogiconUrl": "static/images/warnings_logo3.png",
+        "catalogiconUrl": "static/images/warnings_logo_128.png",
         "previewImageUrl": "static/images/preview3.png",
         "uri": "build-warnings-chart.html",
         "isNameConfigurable": false,

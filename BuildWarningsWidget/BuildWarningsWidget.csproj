@@ -61,6 +61,7 @@
     <Content Include="static\images\preview2.png" />
     <Content Include="static\images\preview3.png" />
     <Content Include="static\images\warnings_logo3.png" />
+    <Content Include="static\images\warnings_logo_128.png" />
     <Content Include="TestPage.html" />
     <Content Include="license.md" />
     <None Include="package.json" />
