@@ -8,7 +8,7 @@
   ],
   "description": "A set of widgets that displays the build warnings produced by a build.",
   "publisher": "SWarnberg",
-  "public": false,
+  "public": true,
   "icons": {
     "default": "static/images/warnings_logo3.png"
   },
