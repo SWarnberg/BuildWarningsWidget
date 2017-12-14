@@ -110,7 +110,7 @@ define(["require", "exports", "TFS/Build/RestClient", "TFS/Build/Contracts", "q"
                 $container.text("No build selected.");
                 return this.WidgetHelpers.WidgetStatusHelper.Success();
             }
-            else if (!warnings) {
+            else if (!warnings || !dates || dates.length < 2) {
                 $container.text("No data to plot.");
                 return this.WidgetHelpers.WidgetStatusHelper.Success();
             }

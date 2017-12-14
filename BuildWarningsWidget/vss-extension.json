@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "buildwarnings-widget",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "name": "Build Warnings Widgets",
   "scopes": [
     "vso.build"
